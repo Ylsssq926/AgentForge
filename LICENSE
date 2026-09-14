@@ -1,0 +1,98 @@
+AgentForge 专有软件许可协议
+AgentForge Proprietary Software License
+
+版权所有 (c) 2026 掠蓝（Luelan）。保留一切权利 / All Rights Reserved.
+
+================================================================================
+中文条款（以中文版为准）
+================================================================================
+
+本协议是你与著作权人之间关于 AgentForge 软件（以下简称"本软件"）的法律协议。
+下载、安装或使用本软件，即表示你接受本协议全部条款；如不接受，请勿安装或使用。
+
+一、授权范围
+  在遵守本协议的前提下，著作权人授予你一项个人的、非独占的、不可转让、不可再许可的许可：
+  在你拥有或控制的设备上，以个人非商业目的安装并使用本软件（以官方发布渠道取得的
+  安装包与二进制形式）。
+  本仓库仅用于软件发布与文档展示，**不包含源代码**；本协议不授予任何源代码相关权利。
+
+二、限制（未经著作权人事先书面许可，不得实施）
+  1. 再分发、转售、出租、出借、镜像、二次打包或以任何形式向第三方提供本软件及其安装包；
+  2. 任何商业使用，包括但不限于以本软件提供付费或增值服务、捆绑销售、内部经营使用、
+     以广告或其他方式变现；
+  3. 对本软件进行逆向工程、反编译、反汇编，或修改、翻译、演绎本软件，或试图从中提取
+     源代码、算法与实现方法；
+  4. 移除、篡改或掩盖本软件中的版权声明、作者信息、官方构建校验标识与品牌标识；
+  5. 将本软件并入其他产品或服务后对外发布；
+  6. 以本软件为基础申请专利，或将其用于训练、微调、蒸馏任何模型或数据集。
+
+三、许可申请
+  需要超出"一、授权范围"的授权（含商业授权、二次开发授权、再分发授权），
+  请联系著作权人协商并取得书面许可。著作权人有权自主决定是否授权及授权条件。
+
+四、无担保与责任限制
+  本软件按"现状"提供，不附带任何形式的明示或默示担保，包括但不限于对适销性、
+  特定用途适用性与不侵权的担保。在任何情况下，著作权人均不对任何索赔、损害或
+  其他责任负责，无论其源于合同、侵权或其他事由，亦无论是否与本软件或本软件的
+  使用或其他交易有关。
+
+五、合规与使用者责任
+  本软件为非官方工具，与相关客户端的开发商、运营商无任何隶属或背书关系。
+  使用者须自行遵守所在地法律法规及相关客户端的服务条款，并对自身使用行为
+  及其后果承担全部责任。使用者应仅在**本人拥有或已获授权**的账号与设备上使用。
+
+六、协议变更与终止
+  著作权人可随时更新本协议；更新后的版本自公开发布之日起对后续获取的副本生效。
+  一旦违反本协议任一条款，你在本协议下获得的全部权利立即自动终止，且须卸载本软件
+  并销毁已持有的全部副本。
+
+================================================================================
+English Terms (for reference; the Chinese version prevails)
+================================================================================
+
+This is a legal agreement between you and the copyright holder regarding the
+AgentForge software (the "Software"). By downloading, installing or using the
+Software, you accept all terms herein. If you do not accept them, do not install
+or use the Software.
+
+1. GRANT. Subject to this Agreement, the copyright holder grants you a personal,
+   non-exclusive, non-transferable, non-sublicensable license to install and use
+   the Software (in installer/binary form obtained from official channels) on
+   devices you own or control, for personal, non-commercial purposes.
+   This repository is for release and documentation only and contains NO source
+   code; no rights in source code are granted.
+
+2. RESTRICTIONS. Without prior written permission, you may NOT:
+   (a) redistribute, resell, rent, lend, mirror, repackage, or otherwise make the
+       Software or its installers available to third parties;
+   (b) use the Software commercially, including providing paid or value-added
+       services based on it, bundling, internal business use, or monetization;
+   (c) reverse engineer, decompile, disassemble, modify, translate, or create
+       derivative works of the Software, or attempt to extract its source code,
+       algorithms, or implementation methods;
+   (d) remove, alter, or obscure copyright notices, author information, official
+       build verification marks, or branding;
+   (e) incorporate the Software into other products or services for release;
+   (f) file patents based on the Software, or use it to train, fine-tune, or
+       distill any model or dataset.
+
+3. LICENSING INQUIRIES. Contact the copyright holder to negotiate permission
+   beyond the GRANT scope. Granting and its terms are at the holder's sole
+   discretion.
+
+4. DISCLAIMER. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+   EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS.
+
+5. COMPLIANCE. This is an unofficial tool with no affiliation with or endorsement
+   by the vendors of any client it manages. Users are solely responsible for
+   complying with applicable laws and the terms of service of those clients, and
+   must use it only with accounts and devices they own or are authorized to use.
+
+6. CHANGES & TERMINATION. The copyright holder may update this Agreement at any
+   time; updated versions apply to copies obtained after publication. Any breach
+   immediately and automatically terminates all rights granted to you, and you
+   must uninstall the Software and destroy all copies in your possession.
