@@ -1,0 +1,134 @@
+/* ============================================================
+   全局基线（primitives）· AgentForge
+   仅设定文档级与裸元素外观；组件外观一律由 ui/ 组件类负责。
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg-app);
+  color: var(--fg);
+  font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Microsoft YaHei", sans-serif;
+  font-size: var(--t-base);
+  line-height: var(--lh);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: var(--fw-semi);
+  line-height: var(--lh-tight);
+  color: var(--fg);
+}
+
+h1 {
+  font-size: var(--t-2xl);
+}
+h2 {
+  font-size: var(--t-xl);
+}
+h3 {
+  font-size: var(--t-md);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code,
+pre {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: var(--t-sm);
+}
+
+/* 滚动条（细、低干扰） */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: var(--r-full);
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* 焦点可见性（键盘可达性统一） */
+:focus-visible {
+  outline: 2px solid var(--brand-ring);
+  outline-offset: 1px;
+  border-radius: var(--r-sm);
+}
+
+/* 选中态 */
+::selection {
+  background: var(--brand-soft);
+}
+
+/* 通用工具类（少量、语义明确） */
+.u-row {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+
+.u-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+.u-spacer {
+  flex: 1 1 auto;
+}
+
+.u-truncate {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.u-muted {
+  color: var(--fg-muted);
+}
+
+.u-subtle {
+  color: var(--fg-subtle);
+  font-size: var(--t-sm);
+}

@@ -1,6 +1,6 @@
 # AgentForge（智能体工坊）
 
-<img src="assets/logo.png" width="140" alt="AgentForge">
+<img src="public/logo.png" width="140" alt="AgentForge">
 
 > **多智能体客户端管理器 · 已适配 Trae / TraeWork / WorkBuddy（各含国际版与国内版）**
 >
@@ -9,7 +9,9 @@
 > 核心能力：**多账号来回切换，任务进展与工作状态都还在。**
 
 > [!IMPORTANT]
-> **本仓库为发布与文档仓库，不含源代码。** 软件以安装包形式发布，请从 [Releases](https://github.com/Ylsssq926/AgentForge/releases) 获取。
+> **核心实现未公开。** 本仓库公开界面层源码（`src/`，React + TypeScript）供阅读与学习；
+> 承载核心能力的本地引擎（Rust / Tauri 层，负责账号切换、设备特征管理、对话数据保护等）
+> 不在本仓库中。完整体验请从 [Releases](https://github.com/Ylsssq926/AgentForge/releases) 下载安装包。
 
 本项目的前作为 **TraeReset**（一款 Trae 环境重置工具）。AgentForge 是在其经验基础上
 完全重写的新一代产品：从「单一重置脚本」重构为「多客户端账号与设备管理基座」，
@@ -69,15 +71,27 @@
 
 **禁止二次售卖。如果你是付费购买获得本工具，请立即退款。**
 
+## 仓库内容
+
+| 内容 | 说明 | 是否公开 |
+| --- | --- | --- |
+| `src/` | 界面层源码（React + TypeScript）：页面、组件、状态管理、设计令牌 | ✅ 公开 |
+| 前端工程配置（`package.json` / `vite.config.ts` / `tsconfig*.json` / `index.html`） | 构建与开发配置 | ✅ 公开 |
+| 本地引擎（Rust / Tauri 层） | 账号切换、设备特征管理、对话数据保护、自动化内核 | ❌ 未公开 |
+| 安装包 | 经 [Releases](https://github.com/Ylsssq926/AgentForge/releases) 发布 | ✅ 公开 |
+
+公开的界面层源码可直接阅读；由于本地引擎不在本仓库中，前端**无法独立运行完整功能**
+（`npm run dev` 仅能预览界面壳）。
+
 ## 许可证
 
-**AgentForge 专有软件许可（非开源）** —— 详见 [LICENSE](LICENSE)。
+**AgentForge 专有许可（Source Available，核心实现未公开）** —— 详见 [LICENSE](LICENSE)。
 
-本软件为**专有软件**，本仓库仅用于发布与文档展示，**不提供源代码**。
+本仓库公开的界面层源码**仅供阅读、学习与技术交流**，不构成开源授权：
 
-- ✅ 允许：在自有设备上安装并使用本软件（个人用途）；分享本仓库链接
-- ❌ 未经书面许可禁止：再分发或转售安装包、商业使用、逆向工程或修改、
-  移除署名与官方构建标识、以本软件提供付费服务
+- ✅ 允许：阅读与学习公开的源码；在自有设备上安装并使用正式版本（个人用途）；分享本仓库链接
+- ❌ 未经书面许可禁止：使用、修改或再分发本仓库公开的源码（含并入其他项目）；
+  再分发或转售安装包；商业使用；逆向工程本地引擎；移除署名与官方构建标识
 
 需要商业授权或二次开发授权，请联系作者协商。
 

@@ -1,0 +1,122 @@
+/* ============================================================
+   设计令牌（单一数据源）· AgentForge
+   规则：任何组件/页面不得出现硬编码色值与魔法间距，一律引用本文件变量。
+   节奏：间距 4/8pt 阶梯；字号 12→24 阶梯；圆角 3 档；阴影 3 档。
+   ============================================================ */
+
+:root {
+  /* ---------- 表面与文字（浅色为基准，dark 覆盖见下） ---------- */
+  --bg-app: #f6f7fb;
+  --bg-surface: #ffffff;
+  --bg-surface-2: #f2f4f8;
+  --bg-hover: #eef1f6;
+  --bg-active: #e6ebf5;
+  --bg-input: #ffffff;
+
+  --fg: #16181d;
+  --fg-muted: #5b6472;
+  --fg-subtle: #8a94a3;
+  --fg-inverse: #ffffff;
+
+  /* ---------- 品牌与语义色 ---------- */
+  --brand: #5b5bd6;
+  --brand-hover: #4f4fc4;
+  --brand-soft: rgba(91, 91, 214, 0.1);
+  --brand-ring: rgba(91, 91, 214, 0.28);
+
+  --ok: #10a37f;
+  --ok-soft: rgba(16, 163, 127, 0.12);
+  --warn: #d97706;
+  --warn-soft: rgba(217, 119, 6, 0.12);
+  --err: #dc2626;
+  --err-soft: rgba(220, 38, 38, 0.1);
+  --info: #2563eb;
+  --info-soft: rgba(37, 99, 235, 0.1);
+
+  /* ---------- 描边 ---------- */
+  --line: rgba(22, 24, 29, 0.1);
+  --line-strong: rgba(22, 24, 29, 0.18);
+
+  /* ---------- 间距（4pt 基准） ---------- */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 20px;
+  --s6: 24px;
+  --s8: 32px;
+  --s10: 40px;
+
+  /* ---------- 字阶 ---------- */
+  --t-xs: 11.5px;
+  --t-sm: 12.5px;
+  --t-base: 13.5px;
+  --t-md: 15px;
+  --t-lg: 17px;
+  --t-xl: 20px;
+  --t-2xl: 24px;
+
+  --lh-tight: 1.25;
+  --lh: 1.5;
+  --lh-loose: 1.7;
+
+  --fw: 400;
+  --fw-med: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+
+  /* ---------- 圆角 ---------- */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-full: 999px;
+
+  /* ---------- 阴影 ---------- */
+  --sh-sm: 0 1px 2px rgba(16, 20, 30, 0.06);
+  --sh-md: 0 4px 12px rgba(16, 20, 30, 0.08);
+  --sh-lg: 0 12px 28px rgba(16, 20, 30, 0.12);
+
+  /* ---------- 控件尺寸 ---------- */
+  --ctl-h: 32px;
+  --ctl-h-sm: 26px;
+  --ctl-h-lg: 38px;
+
+  /* ---------- 动效 ---------- */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 0.14s;
+  --dur: 0.2s;
+
+  /* ---------- 布局 ---------- */
+  --sidebar-w: 232px;
+  --content-max: 1180px;
+  --z-modal: 100;
+  --z-toast: 200;
+}
+
+/* ---------- 深色模式（跟随系统） ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-app: #0f1116;
+    --bg-surface: #171a21;
+    --bg-surface-2: #1d2129;
+    --bg-hover: #232833;
+    --bg-active: #2b3140;
+    --bg-input: #12151b;
+
+    --fg: #eef1f6;
+    --fg-muted: #a5aebd;
+    --fg-subtle: #78828f;
+
+    --brand: #7c7cf0;
+    --brand-hover: #8d8df5;
+    --brand-soft: rgba(124, 124, 240, 0.16);
+    --brand-ring: rgba(124, 124, 240, 0.35);
+
+    --line: rgba(255, 255, 255, 0.1);
+    --line-strong: rgba(255, 255, 255, 0.18);
+
+    --sh-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --sh-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+    --sh-lg: 0 12px 28px rgba(0, 0, 0, 0.55);
+  }
+}

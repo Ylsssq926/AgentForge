@@ -1,0 +1,148 @@
+/* 页面级共用样式（pages/v2） */
+
+.af-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--s3);
+}
+
+.af-feature {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+.af-feature__title {
+  font-size: var(--t-base);
+  font-weight: var(--fw-semi);
+  color: var(--fg);
+}
+
+.af-feature__desc {
+  flex: 1 1 auto;
+  font-size: var(--t-sm);
+  color: var(--fg-muted);
+  line-height: var(--lh-loose);
+}
+
+.af-feature__actions {
+  display: flex;
+  gap: var(--s2);
+  padding-top: var(--s1);
+}
+
+/* 设置项行 */
+.af-set-row {
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+  padding: var(--s3) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.af-set-row:last-child {
+  border-bottom: none;
+}
+
+.af-set-row__main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.af-set-row__label {
+  font-size: var(--t-base);
+  font-weight: var(--fw-med);
+  color: var(--fg);
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+
+.af-set-row__desc {
+  font-size: var(--t-sm);
+  color: var(--fg-muted);
+  line-height: var(--lh-loose);
+  margin-top: 2px;
+}
+
+.af-set-row__action {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+
+/* 关于页 */
+.af-about-hero {
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+}
+
+.af-about-name {
+  font-size: var(--t-2xl);
+  font-weight: var(--fw-bold);
+}
+
+.af-about-desc {
+  font-size: var(--t-base);
+  color: var(--fg-muted);
+  line-height: var(--lh-loose);
+}
+
+.af-about-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  font-size: var(--t-sm);
+  color: var(--fg-muted);
+  line-height: var(--lh-loose);
+}
+
+/* 维护页平台选择 */
+.af-plat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--s2);
+}
+
+.af-plat {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  padding: var(--s3);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--bg-surface);
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+  transition: border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+
+.af-plat:hover {
+  border-color: var(--brand);
+}
+
+.af-plat.is-active {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.af-plat__main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.af-plat__name {
+  font-size: var(--t-base);
+  font-weight: var(--fw-med);
+  color: var(--fg);
+}
+
+.af-plat__sub {
+  font-size: var(--t-xs);
+  color: var(--fg-subtle);
+}
+
+/* 日志/报告输出块样式已移至 ui/ui.css（.af-log），供弹窗与页面共用 */

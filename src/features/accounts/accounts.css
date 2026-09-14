@@ -1,0 +1,152 @@
+/* 账号领域样式（features/accounts） */
+
+.af-acc {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  padding: var(--s3);
+  background: var(--bg-surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  cursor: pointer;
+  transition: border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+
+.af-acc:hover {
+  border-color: var(--brand);
+  background: var(--bg-hover);
+}
+
+.af-acc__main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.af-acc__name {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  font-size: var(--t-base);
+  font-weight: var(--fw-semi);
+  color: var(--fg);
+}
+
+.af-acc__sub {
+  font-size: var(--t-sm);
+  color: var(--fg-muted);
+  margin-top: 2px;
+}
+
+.af-acc__chan {
+  color: var(--fg-subtle);
+}
+
+.af-acc__meta {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+
+/* 额度量条：一眼识别余量档位（>30% 正常 / 10-30% 偏低 / <=10% 告急） */
+.af-acc__bar {
+  width: 56px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--bg-active);
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.af-acc__bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.af-acc__bar-fill--ok {
+  background: var(--ok);
+}
+
+.af-acc__bar-fill--warn {
+  background: var(--warn);
+}
+
+.af-acc__bar-fill--err {
+  background: var(--err);
+}
+
+.af-acc__actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--s1);
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--ease);
+}
+
+.af-acc:hover .af-acc__actions,
+.af-acc:focus-within .af-acc__actions {
+  opacity: 1;
+}
+
+/* 账号列表容器 */
+.af-acc-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+/* 工具条（搜索 + 筛选 + 操作） */
+.af-acc-toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  flex-wrap: wrap;
+}
+
+.af-acc-toolbar__search {
+  flex: 1 1 220px;
+  max-width: 320px;
+}
+
+/* 批量操作条 */
+.af-batch-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  font-size: var(--t-sm);
+  color: var(--fg-muted);
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+/* 统计条 */
+.af-stat-row {
+  display: flex;
+  gap: var(--s3);
+  flex-wrap: wrap;
+}
+
+.af-stat {
+  flex: 1 1 160px;
+  padding: var(--s3) var(--s4);
+  background: var(--bg-surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+}
+
+.af-stat__label {
+  font-size: var(--t-xs);
+  color: var(--fg-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.af-stat__value {
+  font-size: var(--t-xl);
+  font-weight: var(--fw-bold);
+  color: var(--fg);
+  margin-top: 2px;
+}
